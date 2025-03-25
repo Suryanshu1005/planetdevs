@@ -1,0 +1,17 @@
+.custom-hero-section {
+  padding-top: 280px;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(80deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+
+.banner img {
+  animation: rotate360 30s linear infinite;
+  filter: drop-shadow(50px 20px 100px rgba(0, 123, 255, 0.6));
+}
