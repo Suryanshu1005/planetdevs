@@ -8,14 +8,14 @@ const NavbarComponent = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
   return (
-    <Navbar expand="lg" className="custom-navbar" fixed="top">
+    <Navbar expand="lg" className="custom-navbar " fixed="top">
       <Container className="navbar-container">
         <Navbar.Brand href="/" className="brand-logo">
           <span className="logo-text">Infinite IT</span>
         </Navbar.Brand>
 
-        <Navbar id="basic-navbar-nav">
-          <Nav className="nav-link-container">
+        <Navbar id="basic-navbar-nav ">
+          <Nav className="nav-link-container d-none d-xl-flex">
             {menuItems.map((item, index) => (
               <div
                 key={index}

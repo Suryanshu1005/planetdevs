@@ -1,0 +1,60 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  background: black;
+  padding: 2vh 0;
+  position: relative;
+  margin-top: 20px;
+}
+
+.marque-item-title {
+  font-size: 42px;
+}
+.marquee-track {
+  display: flex;
+  width: 250%;
+  align-items: center;
+  justify-content: center;
+  animation: marquee 30s linear infinite;
+  gap: 30px;
+}
+
+.marquee-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  line-height: normal;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+.brand-item-logo {
+  width: 40px;
+}
+
+.marque-item-title:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  width: 1px;
+  height: auto;
+  margin-bottom: 1vh;
+}
+.logotext {
+  font-size: 42px;
+  margin-left: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

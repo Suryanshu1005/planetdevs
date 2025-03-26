@@ -4,26 +4,35 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Background Container */
 .rain-container {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: #0a0a0a; /* Dark Background */
-  overflow: hidden;
+  background-color: #000000; /* Dark Background */
 }
 
 /* Raindrop Styling */
 .raindrop {
   position: absolute;
+  z-index: 1;
+
   width: 2px;
   height: 50px;
   background-color: rgba(0, 174, 255, 0.8); /* Light Blue Drop */
   border-radius: 50%;
   top: 0;
   animation: fall 4s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+}
+
+.main-banner-1 {
+  padding-top: 230px;
+  padding-bottom: 130px;
+  position: relative;
+  height: 1070px;
+  overflow: visible;
 }
 
 /* Positioning the 4 Drops */
@@ -59,5 +68,17 @@ body {
   100% {
     top: 100vh; /* Slow down at the end */
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    background: black !important;
+    font-family: "Russo One", sans-serif !important;
+    margin: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 }

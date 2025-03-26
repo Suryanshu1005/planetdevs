@@ -1,0 +1,75 @@
+.about-us-container {
+  padding-top: 120px;
+  display: flex;
+  color: white;
+}
+
+.section-title {
+  margin-bottom: 100px;
+}
+
+.about-us-hover-button {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.about-us-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(60deg, #3663d8 -20%, #77beff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Jost", sans-serif;
+}
+
+.subtitle-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.about-us-description {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.about-us-content {
+  margin-top: 90px;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .about-us-container {
+    padding-top: 80px;
+    display: grid;
+  }
+
+  .about-us-description {
+    font-size: 30px;
+
+    line-height: 40px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Jost", sans-serif;
+  }
+
+  .about-us-title {
+    font-size: 16px;
+  }
+}

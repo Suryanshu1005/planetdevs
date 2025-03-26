@@ -1,6 +1,12 @@
 import "./App.css";
+import AboutUs from "./components/AboutUsSection/AboutUs";
+import FaqSection from "./components/FAQSection/FaqSection";
 import HeroSection from "./components/HeroSection/HeroSection";
+import LargeBannerTitle from "./components/LargeBannerTitle/LargeBannerTitle";
+import MarqueText from "./components/MarqueText/MarqueText";
 import NavbarComponent from "./components/NavbarComponent/Navbar";
+import OutSteps from "./components/OurSteps/OutSteps";
+import RunningCounter from "./components/RunningCounter/RunningCounter";
 
 function App() {
   return (
@@ -14,7 +20,17 @@ function App() {
 
       {/* Main Content */}
       <NavbarComponent />
-      <HeroSection />
+      <div className="main-banner main-banner-1 px-2">
+        <HeroSection />
+        <div>
+          <LargeBannerTitle />
+        </div>
+      </div>
+      <AboutUs />
+      {/* <RunningCounter target={} /> */}
+      <MarqueText />
+      <OutSteps />
+      <FaqSection />
     </div>
   );
 }

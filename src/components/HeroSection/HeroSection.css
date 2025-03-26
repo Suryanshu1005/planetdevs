@@ -1,5 +1,50 @@
 .custom-hero-section {
-  padding-top: 280px;
+  padding-top: 230px;
+  padding-bottom: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Ensure positioning context for children */
+}
+
+.banner {
+  background-image: url("../../assets/banner-bg-01.png");
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 20px;
+  height: 100%; /* Ensure it covers the section */
+  background-size: cover; /* Make background responsive */
+  background-position: center;
+}
+
+.banner-content {
+  padding-left: 37px;
+  position: relative;
+}
+
+.attract-hover {
+  position: absolute;
+  top: 400px;
+  right: 200px;
+}
+
+.hero-image {
+  max-width: 100%; /* Ensure it scales responsively */
+  height: auto;
+}
+
+.banner-image {
+  animation: rotate360 30s linear infinite;
+  filter: drop-shadow(
+    0 0 25px rgba(52, 154, 172, 0.6)
+  ); /* Adjusted filter syntax */
+}
+
+.banner-title-1 {
+  font-size: 52px !important;
+  line-height: 58px !important;
+  color: white;
 }
 
 @keyframes rotate360 {
@@ -11,7 +56,96 @@
   }
 }
 
-.banner img {
-  animation: rotate360 30s linear infinite;
-  filter: drop-shadow(50px 20px 100px rgba(0, 123, 255, 0.6));
+@media (max-width: 576px) {
+  .hero-image {
+    display: block; /* Ensure it behaves as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; /* Optional: Limit width for better fit */
+  }
+}
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .custom-hero-section {
+    padding-top: 150px; /* Reduce padding for tablets */
+    padding-bottom: 100px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+  .hero-image {
+    animation: rotate360 30s linear infinite;
+    filter: drop-shadow(0 0 25px rgba(52, 154, 172, 0.6));
+    width: 150px;
+  }
+
+  .banner-image-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-title-1 {
+    font-size: 40px !important; /* Smaller title */
+    line-height: 46px !important;
+    text-align: center;
+  }
+
+  .attract-hover {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px; /* Add spacing */
+    text-align: center; /* Center button */
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner {
+    left: 0; /* Adjust for smaller screens */
+  }
+
+  .banner-content {
+    padding-left: 20px; /* Reduce padding */
+    text-align: center; /* Center text */
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-hero-section {
+    padding-top: 100px; /* Further reduce padding */
+    padding-bottom: 80px;
+  }
+
+  .banner-title-1 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+
+  .banner img {
+    max-width: 80%; /* Reduce image size */
+  }
+}
+
+@media (max-width: 991px) {
+  .main-banner-1 {
+    height: 650px;
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-hero-section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .banner-title-1 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .banner-content {
+    padding-left: 10px;
+  }
+
+  .banner img {
+    max-width: 70%; /* Further reduce image size */
+  }
 }

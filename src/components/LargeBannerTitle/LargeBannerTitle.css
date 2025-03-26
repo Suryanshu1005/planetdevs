@@ -1,0 +1,40 @@
+.banner-title {
+  position: absolute;
+  font-size: 20vw; /* Scales with viewport width */
+  line-height: 1.05; /* Relative to font-size */
+  font-family: "Russo One", sans-serif;
+  color: #ffffff;
+  left: 0;
+  bottom: -1vw; /* Scales with viewport width */
+}
+
+/* Media queries for finer control */
+@media (max-width: 1200px) {
+  .banner-title {
+    font-size: 18vw; /* Slightly smaller for medium screens */
+    bottom: -0.9vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-title {
+    font-size: 15vw; /* Adjust for tablets */
+    bottom: -0.8vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 70px;
+    bottom: -5vw;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-title {
+    font-size: 10vw; /* Smallest for very small screens */
+    bottom: -0.6vw;
+  }
+}
