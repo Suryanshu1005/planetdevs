@@ -1,80 +1,43 @@
-.faq-container {
-  background-color: #000;
-  padding: 50px 0;
-}
-
-.accordion-item {
+.accordion-button {
+  background: black;
+  color: white;
+  border-radius: 0;
+  border-image: linear-gradient(to right, rgb(54, 99, 216), rgb(119, 190, 255))
+    1 / 1 / 0 stretch;
+  padding: 30px 75px 30px 30px;
+  margin: 5px 0;
+  text-align: left;
+  width: 100%;
   font-size: 22px;
-  background-color: inherit;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.accordion-header h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.4;
-  transition: background 0.3s ease-in-out,
-    -webkit-background-clip 0.3s ease-in-out, background-clip 0.3s ease-in-out,
-    color 0.3s ease-in-out;
-}
-
-.accordion-item:hover .accordion-header h3 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: #77beff;
-}
-
-.accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   cursor: pointer;
-  color: white;
-  min-height: 100px;
 }
 
-.accordion-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-size: 24px;
-  font-weight: 300;
+.accordion-button:hover {
+  color: rgb(54, 99, 216);
 }
 
-.accordion-item.active .accordion-header {
-  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(
+    170deg,
+    rgb(54, 99, 216) 0%,
+    rgb(119, 190, 255) 100%
+  );
   color: white;
 }
 
 .accordion-body {
-  padding: 20px;
-  background-color: rgba(18, 194, 233, 0.1);
-  color: rgba(255, 255, 255, 0.8);
+  background: black;
+  color: rgb(212, 214, 215);
+  font-family: "Jost", sans-serif;
 }
 
-.accordion-item.active .accordion-icon {
-  background-color: rgba(255, 255, 255, 0.2);
+.accordion-button:not(.collapsed):hover {
+  color: white;
 }
 
-@media (max-width: 767px) {
-  .accordion-header {
-    min-height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .accordion-icon {
-    align-self: flex-end;
-  }
+.accordion {
+  --bs-accordion-border-width: 0;
 }
