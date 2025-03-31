@@ -2,8 +2,8 @@
   background: black;
   color: white;
   border-radius: 0;
-  border-image: linear-gradient(to right, rgb(54, 99, 216), rgb(119, 190, 255))
-    1 / 1 / 0 stretch;
+  /* border-image: linear-gradient(to right, rgb(54, 99, 216), rgb(119, 190, 255))
+    1 / 1 / 0 stretch; */
   padding: 30px 75px 30px 30px;
   margin: 5px 0;
   text-align: left;
@@ -13,10 +13,62 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  margin: 0;
 }
 
 .accordion-button:hover {
   color: rgb(54, 99, 216);
+}
+
+.custom-accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.custom-accordion-button::after {
+  display: none !important; /* Hide the default Bootstrap accordion icon */
+}
+
+/* Style for the accordion title and icon */
+.accordion-title {
+  flex-grow: 1;
+}
+
+.btn-click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 6vh;
+  width: 6vh;
+  flex-direction: column;
+  transition: transform 0.5s ease-out; /* Smooth effect */
+  cursor: pointer;
+}
+.btn-click::after {
+  content: "";
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  top: 52%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+/* Optional: Add some transitions for smoother icon change */
+.accordion-icon i {
+  transition: transform 0.3s ease;
+}
+
+/* Optional: If you want to add some hover effects */
+.custom-accordion-button:hover .accordion-icon {
+  opacity: 0.8;
 }
 
 .accordion-button:not(.collapsed) {
@@ -40,4 +92,60 @@
 
 .accordion {
   --bs-accordion-border-width: 0;
+  --bs-accordion-transition: none;
+  --bs-accordion-bg: black !important;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .faq-container .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-transition: none;
+    --bs-accordion-bg: none !important;
+  }
+
+  .faq-container .col-md-6 {
+    width: 100%;
+  }
+
+  .accordion-item {
+    margin-bottom: 15px; /* Adds gap between accordion items on mobile */
+  }
+
+  .accordion-button {
+    padding: 20px 0 20px 20px; /* Slightly reduced padding for mobile */
+  }
+
+  .btn-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 6vh;
+    width: 8vh;
+    flex-direction: column;
+    transition: transform 0.5s ease-out; /* Smooth effect */
+    cursor: pointer;
+  }
+  .btn-click::after {
+    content: "";
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    top: 52%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+  }
 }

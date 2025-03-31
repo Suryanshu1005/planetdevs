@@ -33,10 +33,7 @@ const AboutUs = () => {
                 enim ad minim veniam.
               </p>
               <div class="d-flex justify-content-center mt-5 ms-sm-5 ms-0">
-                <HoverMagneticButton
-                  text={"About Us"}
-                  icon={"fas fa-arrow-down"}
-                />
+                <HoverMagneticButton text={"About Us"} />
               </div>
             </div>
             {/* <div className="col-sm-8">

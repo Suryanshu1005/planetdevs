@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./FaqSection.css";
+import subtitleIcon from "../../assets/subtitle-icon.png";
 
 const FaqSection = () => {
   const [activeKey, setActiveKey] = useState(null);
@@ -57,7 +58,7 @@ const FaqSection = () => {
         <div key={faq.id} className="accordion-item">
           <h2 className="accordion-header">
             <button
-              className={`accordion-button ${
+              className={`accordion-button custom-accordion-button ${
                 activeKey === actualIndex ? "" : "collapsed"
               }`}
               type="button"
@@ -68,7 +69,14 @@ const FaqSection = () => {
                 setActiveKey(activeKey === actualIndex ? null : actualIndex)
               }
             >
-              {faq.title}
+              <span className="accordion-title">{faq.title}</span>
+              <span className="btn-click">
+                {activeKey === actualIndex ? (
+                  <i className="fa-solid fa-minus"></i>
+                ) : (
+                  <i className="fa-solid fa-plus"></i>
+                )}
+              </span>
             </button>
           </h2>
           <div
@@ -86,6 +94,17 @@ const FaqSection = () => {
 
   return (
     <div className="container-global faq-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="section-title">
+            <span class="about-us-title justify-content-center">
+              <img class="img-fluid" src={subtitleIcon} alt="subtitleIcon" />{" "}
+              FAQ
+            </span>
+            <h2 class="title mb-0">Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
       <div className="row">
         <div className="col-md-6">
           <div className="accordion" id="accordionLeft">

@@ -18,7 +18,7 @@
 
 @media (max-width: 991px) {
   .banner-title {
-    font-size: 15vw; /* Adjust for tablets */
+    font-size: 70px; /* Adjust for tablets */
     bottom: -0.8vw;
   }
 }
@@ -34,7 +34,7 @@
 
 @media (max-width: 576px) {
   .banner-title {
-    font-size: 10vw; /* Smallest for very small screens */
+    font-size: 70px; /* Smallest for very small screens */
     bottom: -0.6vw;
   }
 }

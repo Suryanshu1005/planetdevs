@@ -183,6 +183,142 @@
   animation: sketch 0.5s ease forwards;
 }
 
+/* Add these styles to your existing NavbarComponent.css */
+
+/* Hamburger menu active state */
+.hamburger-menu .line.active {
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu .line.active:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu .line.active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu .line.active:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 450px;
+  height: 100%;
+  background: linear-gradient(
+    130deg,
+    rgb(54, 99, 216) 0%,
+    rgb(119, 190, 255) 100%
+  );
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 40px 50px;
+  padding-bottom: 0px !important;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 24px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px 0px 0px auto;
+  outline: none;
+}
+
+.sidebar-content {
+  padding: 0 50px 50px;
+}
+
+.sidebar-nav-item {
+  margin-bottom: 10px;
+}
+
+.body-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: auto;
+}
+
+.about-info p {
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-submenu {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-submenu-item {
+  padding: 8px 0;
+  color: #666;
+  text-decoration: none;
+}
+
+.sidebar-submenu-item:hover {
+  color: #333;
+}
+
+/* Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .nav-item {
@@ -192,5 +328,29 @@
   .nav-btn {
     margin: 10px 0;
     width: 150px;
+  }
+
+  .line {
+    width: 7.7vw;
+    height: 0.3vh;
+
+    background-color: white;
+    opacity: 1;
+    transform: translateX(var(--initial-x));
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background: rgb(24, 24, 24) !important;
+    z-index: 1050;
+    transition: right 0.3s ease;
+    overflow-y: auto;
   }
 }

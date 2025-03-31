@@ -5,8 +5,8 @@
   color: white;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  height: 22vh;
-  width: 22vh;
+  height: 19vh;
+  width: 19vh;
   flex-direction: column;
   transition: transform 0.5s ease-out; /* Smooth effect */
   cursor: pointer;
@@ -14,8 +14,8 @@
 .click::after {
   content: "";
   position: absolute;
-  width: 22vh;
-  height: 22vh;
+  width: 19vh;
+  height: 19vh;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   top: 54%;

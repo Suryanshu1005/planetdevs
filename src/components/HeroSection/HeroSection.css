@@ -34,6 +34,65 @@
   height: auto;
 }
 
+/* Add these styles to your HeroSection.css file */
+
+.globe-container {
+  width: 100% !important;
+  height: 450px !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.globe-container canvas {
+  /* width: 100% !important;
+  height: 100% !important; */
+  display: block;
+}
+
+.globe-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Add some ambiance with a subtle glow behind the globe */
+.globe-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(
+    circle,
+    rgba(77, 171, 247, 0.15) 0%,
+    rgba(13, 17, 23, 0) 70%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.earth-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* You may need to adjust these styles based on how the @tarii/3d-earth package renders */
+.earth-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 .banner-image {
   animation: rotate360 30s linear infinite;
   filter: drop-shadow(
@@ -116,6 +175,7 @@
   .banner-title-1 {
     font-size: 32px !important;
     line-height: 38px !important;
+    margin-top: 80px;
   }
 
   .banner img {
@@ -137,12 +197,15 @@
   }
 
   .banner-title-1 {
-    font-size: 24px !important;
+    font-size: 30px !important;
     line-height: 30px !important;
   }
 
   .banner-content {
-    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 30px;
   }
 
   .banner img {
