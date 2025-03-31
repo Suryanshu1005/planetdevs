@@ -37,128 +37,98 @@ const OutSteps = () => {
           </div>
         </div>
         <div className="col-xxl-6 col-xl-7">
-          <div className="row ">
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2">
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
+          <div className="row">
+            <div className="col-sm-6">
+              <div className="services grid-wrapper">
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Information Security</h5>
+                      <p>
+                        Remind yourself of someone you know who died suddenly
+                        and the fact that there is no guarantee that tomorrow
+                      </p>
+                    </div>
                   </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
+                </div>
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Data Synchronization</h5>
+                      <p>
+                        Remind yourself of someone you know who died suddenly
+                        and the fact that there is no guarantee that tomorrow
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Event Processing</h5>
+                      <p>
+                        There is really no magic to it and it’s not reserved
+                        only for a select few people. As such, success really
+                        has nothing.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2" style={{marginTop: "100px"}}>
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
+            <div className="col-sm-6">
+              <div className="services grid-wrapper service-top-space">
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Process Automation</h5>
+                      <p>
+                        It must come from the natural product of your desire to
+                        achieve something and your belief that you are capable.
+                      </p>
+                    </div>
                   </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row ">
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2" style={{marginTop: "-100px"}}>
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Mobile Platforms</h5>
+                      <p>
+                        There is really no magic to it and it’s not reserved
+                        only for a select few people. As such, success really
+                        has nothing.
+                      </p>
+                    </div>
                   </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
                 </div>
-              </div>
-            </div>
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2">
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
+                <div className="service-wrapper service-style-1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <img className="img-fluid" src={informationSec} alt="#" />
+                    </div>
+                    <div className="service-content">
+                      <h5 className="service-title">Content Management</h5>
+                      <p>
+                        It must come from the natural product of your desire to
+                        achieve something and your belief that you are capable.
+                      </p>
+                    </div>
                   </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row ">
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2" style={{marginTop: "-100px"}}>
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
-                  </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
-                </div>
-              </div>
-            </div>
-            <div className="col mb-3">
-              <div className="grid-wrapper">
-                <div className="service-style-2">
-                  <div className="text-start">
-                    <img
-                      src={informationSec}
-                      alt="Process 1"
-                      className="mb-3"
-                      style={{maxWidth: "100px", height: "auto"}}
-                    />
-                    <h3>Information Security</h3>
-                    <p>
-                      Remind yourself of someone you know who died suddenly and
-                      the fact that there is no guarantee that tomorrow
-                    </p>
-                  </div>
-                  {/* <HoverMagneticButton text={""} icon={"fas fa-arrow-right"} /> */}
                 </div>
               </div>
             </div>

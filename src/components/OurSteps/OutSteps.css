@@ -17,17 +17,46 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 30px;
 }
-.service-style-2 {
+
+.service-wrapper.service-style-1 {
   position: relative;
   margin: 0;
   padding: 60px 40px;
   background: #000000;
-  border: 1px solid #101010;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 10px;
+  height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.service-style-2::before {
+.service-wrapper.service-style-1 .service-inner {
+  padding-left: 4px;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.service-wrapper.service-style-1 .service-icon {
+  opacity: 1;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-wrapper.service-style-1 .service-content .service-title {
+  margin-bottom: 20px;
+}
+
+.service-wrapper.service-style-1 .service-content p {
+  margin-bottom: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  columns: #d4d6d7;
+}
+
+.services.grid-wrapper.service-top-space {
+  margin-top: 100px;
+}
+
+.service-style-1::before {
   content: "";
   position: absolute;
   left: 0;
@@ -42,11 +71,31 @@
   background: linear-gradient(130deg, #3663d8, #77beff, #00d1ff) 100%;
 }
 
-.service-style-2:hover:before {
+.service-style-1:hover:before {
   opacity: 1;
 }
 
 .ourstep-description {
   font-family: "Jost", sans-serif;
   color: #d4d6d7;
+}
+
+@media (max-width: 576px) {
+  .our-step-container {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0 0;
+    display: flex;
+    color: white;
+  }
+  .our-step-description-container {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .services.grid-wrapper.service-top-space {
+    margin-top: 30px;
+  }
 }
