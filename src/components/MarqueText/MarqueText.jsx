@@ -2,10 +2,10 @@ import React from "react";
 import "./MarqueText.css";
 
 const logos = [
-  { id: 1, src: "src/assets/brand-icon1.png", text: "UI/UX Design" },
-  { id: 2, src: "src/assets/brand-icon2.png", text: "Digital Agency" },
-  { id: 3, src: "src/assets/brand-icon3.png", text: "Web Design" },
-  { id: 4, src: "src/assets/brand-icon3.png", text: "ISO Developer" },
+  {id: 1, src: "src/assets/brand-icon1.png", text: "UI/UX Design"},
+  {id: 2, src: "src/assets/brand-icon2.png", text: "Cloud Services"},
+  {id: 3, src: "src/assets/brand-icon3.png", text: "Web Design"},
+  {id: 4, src: "src/assets/brand-icon3.png", text: "Cloud Security"},
 ];
 
 const MarqueText = () => {

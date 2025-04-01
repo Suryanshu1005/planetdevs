@@ -21,7 +21,7 @@ const NavbarComponent = () => {
       <Navbar expand="lg" className="custom-navbar " fixed="top">
         <Container className="navbar-container">
           <Navbar.Brand href="/" className="brand-logo">
-            <span className="logo-text">Infinite IT</span>
+            <span className="logo-text">Planet Devs</span>
           </Navbar.Brand>
 
           <Navbar id="basic-navbar-nav ">

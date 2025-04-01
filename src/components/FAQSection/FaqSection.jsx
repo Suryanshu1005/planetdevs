@@ -10,15 +10,16 @@ const FaqSection = () => {
   const faqs = [
     {
       id: "collapseOne",
-      title: "What are your digital marketing services?",
+      title: "How do you handle security in a multi-cloud environment?",
       content:
-        "We offer comprehensive digital marketing solutions including SEO, social media marketing, content marketing, and paid advertising strategies.",
+        "We implement centralized security management, consistent policies, and automated monitoring across multiple cloud platforms to ensure seamless protection.",
     },
     {
       id: "collapseTwo",
-      title: "How do you measure marketing success?",
+      title:
+        "What steps does your company take to secure data in a multi-cloud setup?",
       content:
-        "We use data-driven metrics like conversion rates, ROI, engagement rates, and custom KPIs tailored to your business objectives.",
+        "Our approach includes unified security controls, standardized encryption protocols, and real-time threat detection to safeguard data across all cloud environments.",
     },
     {
       id: "collapseThree",
@@ -28,9 +29,9 @@ const FaqSection = () => {
     },
     {
       id: "collapseFour",
-      title: "What industries do you specialize in?",
+      title: "How do you ensure compliance with industry regulations?",
       content:
-        "We have experience across various industries including technology, healthcare, e-commerce, finance, and professional services.",
+        "We align with security frameworks like ISO 27001, NIST, GDPR, HIPAA, and SOC 2 to ensure compliance with industry standards and regulations.",
     },
     {
       id: "collapseFive",
