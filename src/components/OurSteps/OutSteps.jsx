@@ -2,6 +2,11 @@ import React from "react";
 import "./OutSteps.css";
 import subtitleIcon from "../../assets/subtitle-icon.png";
 import informationSec from "../../assets/Information-Security.svg";
+import ContentManagement from "../../assets/Content-Management.svg";
+import DataSync from "../../assets/Data-Synchronization.svg";
+import EventProcessing from "../../assets/Event-Processing.svg";
+import MobilePlat from "../../assets/Mobile-Platforms.svg";
+import ProcessAuto from "../../assets/Process-Automation.svg";
 import HoverMagneticButton from "../HoverMagneticButton/HoverMagneticButton";
 
 const OutSteps = () => {
@@ -22,14 +27,17 @@ const OutSteps = () => {
                   <span className="about-us-title">Our Steps</span>
                 </div>
                 <p className="our-step-description-container text-start">
-                  Digital Marketing Services That Help You Grow.
+                  We build security that never sleeps
                 </p>
                 <div class="ps-xxl-5 ms-0 ms-md-5" style={{width: "100%"}}>
                   <p className="ourstep-description">
-                    We all know that nothing moves until someone makes a
-                    decision. The first action is always in making the decision
-                    to proceed. which most people overlook, we don’t do it
-                    intentionally or with malice.
+                    Our cutting-edge cloud security solutions provide 24/7
+                    protection, ensuring your data, applications, and
+                    infrastructure remain safe at all times. With advanced
+                    threat detection, real-time monitoring, and proactive
+                    defense strategies, we safeguard your business from
+                    potential risks—so you can focus on growth without
+                    compromise
                   </p>
                 </div>
               </div>
@@ -57,13 +65,17 @@ const OutSteps = () => {
                 <div className="service-wrapper service-style-1">
                   <div className="service-inner">
                     <div className="service-icon">
-                      <img className="img-fluid" src={informationSec} alt="#" />
+                      <img className="img-fluid" src={DataSync} alt="#" />
                     </div>
                     <div className="service-content">
-                      <h5 className="service-title">Data Synchronization</h5>
+                      <h5 className="service-title">
+                        Reliable, Secure, and Scalable Cloud Solutions
+                      </h5>
                       <p>
-                        Remind yourself of someone you know who died suddenly
-                        and the fact that there is no guarantee that tomorrow
+                        Our cloud security solutions provide 24/7 protection
+                        with real-time monitoring and proactive defense, keeping
+                        your data and infrastructure safe—so you can focus on
+                        growth with confidence
                       </p>
                     </div>
                   </div>
@@ -71,7 +83,11 @@ const OutSteps = () => {
                 <div className="service-wrapper service-style-1">
                   <div className="service-inner">
                     <div className="service-icon">
-                      <img className="img-fluid" src={informationSec} alt="#" />
+                      <img
+                        className="img-fluid"
+                        src={EventProcessing}
+                        alt="#"
+                      />
                     </div>
                     <div className="service-content">
                       <h5 className="service-title">Event Processing</h5>
@@ -90,7 +106,7 @@ const OutSteps = () => {
                 <div className="service-wrapper service-style-1">
                   <div className="service-inner">
                     <div className="service-icon">
-                      <img className="img-fluid" src={informationSec} alt="#" />
+                      <img className="img-fluid" src={ProcessAuto} alt="#" />
                     </div>
                     <div className="service-content">
                       <h5 className="service-title">Process Automation</h5>
@@ -104,7 +120,7 @@ const OutSteps = () => {
                 <div className="service-wrapper service-style-1">
                   <div className="service-inner">
                     <div className="service-icon">
-                      <img className="img-fluid" src={informationSec} alt="#" />
+                      <img className="img-fluid" src={MobilePlat} alt="#" />
                     </div>
                     <div className="service-content">
                       <h5 className="service-title">Mobile Platforms</h5>
@@ -119,7 +135,11 @@ const OutSteps = () => {
                 <div className="service-wrapper service-style-1">
                   <div className="service-inner">
                     <div className="service-icon">
-                      <img className="img-fluid" src={informationSec} alt="#" />
+                      <img
+                        className="img-fluid"
+                        src={ContentManagement}
+                        alt="#"
+                      />
                     </div>
                     <div className="service-content">
                       <h5 className="service-title">Content Management</h5>
