@@ -18,7 +18,7 @@ const routes = [
     label: "Home",
   },
   {
-    link: "#",
+    link: "#about",
     label: "About Us",
   },
   {
@@ -26,11 +26,11 @@ const routes = [
     label: "Team",
   },
   {
-    link: "#",
+    link: "#services",
     label: "Services",
   },
   {
-    link: "#",
+    link: "#contact",
     label: "Contact",
   },
   {
@@ -122,9 +122,9 @@ const FooterSection = () => {
             <div className="col-xl-3 col-md-12 ms-auto">
               <div className="footer-sections">
                 <div className="widget widget-info">
-                  <h5 className="widget-title">Call Center</h5>
-                  <a className="number" href="tel:+1800555500">
-                    1-800-555-500
+                  <h5 className="widget-title">Contact us</h5>
+                  <a className="number" href="tel:+91-9695553837">
+                    +91-9695553837
                   </a>
                   <h6 className="title">and get a free estimate</h6>
                 </div>

@@ -30,14 +30,18 @@ function App() {
             <LargeBannerTitle />
           </div>
         </div>
-        <AboutUs />
+        <div id="about" className="space-pt">
+          <AboutUs />
+        </div>
         {/* <RunningCounter target={} /> */}
         <MarqueText />
-        <OutSteps />
-        <div className="space-pt">
+        <div id="services" className="space-pt">
+          <OutSteps />
+        </div>
+        <div id="expertise" className="space-pt">
           <FaqSection />
         </div>
-        <div className="space-pt">
+        <div id="contact" className="space-pt">
           <FooterSection />
         </div>
       </div>

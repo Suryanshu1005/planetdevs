@@ -18,10 +18,35 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: #ffffff;
+  font-family: "Jost", sans-serif;
+}
+
+.logo-text::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 13px;
+  width: 4px;
+  height: 4px;
+  margin-left: 3px;
+  background-color: red;
 }
 
 .nav-links {
   align-items: center;
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-item {
@@ -68,8 +93,12 @@
 }
 
 .nav-link-container {
-  font-family: Jost, sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav-item-wrapper {
@@ -352,5 +381,8 @@
     z-index: 1050;
     transition: right 0.3s ease;
     overflow-y: auto;
+  }
+  .custom-navbar {
+    padding: 10px !important;
   }
 }

@@ -2,11 +2,11 @@
 import React, {useState} from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
 import "./NavbarComponent.css";
-import {menuItems} from "../../constants";
+import {menuItemsLeft, menuItemsRight} from "../../constants";
 
 const NavbarComponent = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  // const [activeSubmenu, setActiveSubmenu] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -18,21 +18,13 @@ const NavbarComponent = () => {
   };
   return (
     <>
-      <Navbar expand="lg" className="custom-navbar " fixed="top">
-        <Container className="navbar-container">
-          <Navbar.Brand href="/" className="brand-logo">
-            <span className="logo-text">Planet Devs</span>
-          </Navbar.Brand>
-
-          <Navbar id="basic-navbar-nav ">
-            <Nav className="nav-link-container d-none d-xl-flex">
-              {menuItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="nav-item-wrapper"
-                  onMouseEnter={() => setActiveSubmenu(index)} // Show submenu on hover
-                  onMouseLeave={() => setActiveSubmenu(null)} // Hide submenu on leave
-                >
+      <Navbar expand="lg" className="custom-navbar" fixed="top">
+        <div className="container d-flex justify-content-center align-items-center position-relative">
+          {/* Left menu items */}
+          <Nav className="d-none d-xl-flex">
+            <div className="nav-link-container d-flex">
+              {menuItemsLeft.map((item, index) => (
+                <div key={index} className="nav-item-wrapper">
                   <Nav.Link
                     href={item.link}
                     className="nav-item nav-link-custom"
@@ -47,25 +39,45 @@ const NavbarComponent = () => {
                       )}
                     </p>
                   </Nav.Link>
-                  {item.submenu && activeSubmenu === index && (
-                    <div className="submenu">
-                      {item.submenu.map((subItem, subIndex) => (
-                        <a
-                          key={subIndex}
-                          href={subItem.link}
-                          className="submenu-item"
-                        >
-                          {subItem.name}
-                        </a>
-                      ))}
-                    </div>
-                  )}
                 </div>
               ))}
-            </Nav>
-          </Navbar>
+            </div>
+          </Nav>
 
-          <div className="hamburger-menu-container">
+          {/* Brand logo (no margin) */}
+          <Navbar.Brand href="/" className="brand-logo m-0">
+            <span className="logo-text">Planet Devs</span>
+          </Navbar.Brand>
+
+          {/* Right menu items */}
+          <Nav className="d-none d-xl-flex">
+            <div className="nav-link-container d-flex">
+              {menuItemsRight.map((item, index) => (
+                <div key={index} className="nav-item-wrapper">
+                  <Nav.Link
+                    href={item.link}
+                    className="nav-item nav-link-custom"
+                  >
+                    <p style={{padding: 0, margin: 0}}>{item.name}</p>
+                    <p style={{padding: 0, margin: 0}}>
+                      {item.submenu && (
+                        <i
+                          style={{fontSize: "12px", padding: 0}}
+                          className="fa-solid fa-chevron-down"
+                        ></i>
+                      )}
+                    </p>
+                  </Nav.Link>
+                </div>
+              ))}
+            </div>
+          </Nav>
+
+          {/* Hamburger menu (always visible, positioned absolutely on the right) */}
+          <div
+            className="hamburger-menu-container position-absolute"
+            style={{right: "15px"}}
+          >
             <div
               className="hamburger-menu"
               onMouseEnter={() => setIsHovered(true)}
@@ -84,7 +96,7 @@ const NavbarComponent = () => {
               ))}
             </div>
           </div>
-        </Container>
+        </div>
       </Navbar>
 
       {/* Sidebar */}
