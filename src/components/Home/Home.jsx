@@ -4,8 +4,7 @@ import HeroSection from "../HeroSection/HeroSection";
 import AboutUs from "../AboutUsSection/AboutUs";
 import MarqueText from "../MarqueText/MarqueText";
 import OutSteps from "../OurSteps/OutSteps";
-import FaqSection from "../FaqSection/FaqSection";
-import FooterSection from "../FooterSection/FooterSection";
+import FaqSection from "../FAQSection/FaqSection";
 
 function Home() {
   return (
