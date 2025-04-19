@@ -11,6 +11,7 @@ import "./FooterSection.css";
 import address from "../../assets/address-info-contacts.svg";
 import call from "../../assets/address-info-headphone.svg";
 import email from "../../assets/address-info-email.svg";
+import logo from "../../assets/PD-Logo.png";
 
 const routes = [
   {
@@ -162,8 +163,10 @@ const FooterSection = () => {
                   <p>
                     <a className="footer-logo" href="index.html">
                       <img
-                        className="img-fluid"
-                        src="images/logo.svg"
+                        // className="img-fluid"
+                        width={175}
+                        height={23}
+                        src={logo}
                         alt="logo"
                       />
                     </a>
@@ -171,8 +174,8 @@ const FooterSection = () => {
                 </div>
                 <div className="col-lg-6 text-lg-end">
                   <p>
-                    Develop and design by{" "}
-                    <a href="#">Potenza Global Solutions</a>
+                    Copyright © 2025 <a href="#">PlanetDevs</a> All rights
+                    reserved.
                   </p>
                 </div>
               </div>
