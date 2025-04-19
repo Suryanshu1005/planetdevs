@@ -1,6 +1,6 @@
 .banner-title {
   position: absolute;
-  font-size: 20vw; /* Scales with viewport width */
+  font-size: 18vw; /* Scales with viewport width */
   line-height: 1.05; /* Relative to font-size */
   font-family: "Russo One", sans-serif;
   color: #ffffff;
