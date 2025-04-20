@@ -5,6 +5,9 @@ import aboutus2 from "../../assets/about-03.jpg";
 import subtitleIcon from "../../assets/subtitle-icon.png";
 import HoverMagneticButton from "../HoverMagneticButton/HoverMagneticButton";
 const AboutUs = () => {
+  const onclick = () => {
+    window.location.href = "/about-us";
+  };
   return (
     <section className="space-pt">
       <div className="container-global about-us-container ">
@@ -31,22 +34,12 @@ const AboutUs = () => {
                 We specialize in crafting cutting-edge technology solutions that drive innovation and deliver exceptional value. 
                 Our team is dedicated to understanding your needs, solving complex challenges, 
                 and creating seamless digital experiences. Your success is our mission.
+
               </p>
               <div class="d-flex justify-content-center mt-5 ms-sm-5 ms-0">
-                <HoverMagneticButton text={"About Us"} />
+                <HoverMagneticButton text={"About Us"} onclick={onclick} />
               </div>
             </div>
-            {/* <div className="col-sm-8">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-              <div className="about-us-hover-button">
-                <HoverMagneticButton
-                  text={"About Us"}
-                  icon={"fas fa-arrow-down"}
-                />
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="col-lg-5">

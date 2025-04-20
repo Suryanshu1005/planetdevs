@@ -39,6 +39,7 @@
   text-transform: capitalize;
   font-size: 60px;
   line-height: 70px;
+  font-family: "Russo One", sans-serif !important;
 }
 
 .about-us-content {

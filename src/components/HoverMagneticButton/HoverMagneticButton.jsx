@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./HoverMagneticButton.css";
 
-const HoverMagneticButton = ({text, icon}) => {
+const HoverMagneticButton = ({text, icon, onclick}) => {
   const [offset, setOffset] = useState({x: 0, y: 0});
 
   const handleMouseMove = (e) => {
@@ -22,6 +22,7 @@ const HoverMagneticButton = ({text, icon}) => {
 
   return (
     <div
+      onClick={onclick}
       className="click"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

@@ -1,8 +1,10 @@
 // NavbarComponent.jsx
 import React, {useState} from "react";
-import {Navbar, Nav, Container} from "react-bootstrap";
+import {Navbar, Nav, Container, Image} from "react-bootstrap";
 import "./NavbarComponent.css";
 import {menuItemsLeft, menuItemsRight} from "../../constants";
+// import logo from "../../assets/PD-Logo.png";
+import logoWhite from "../../assets/PD-Logo-White.png";
 
 const NavbarComponent = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -46,7 +48,9 @@ const NavbarComponent = () => {
 
           {/* Brand logo (no margin) */}
           <Navbar.Brand href="/" className="brand-logo m-0">
-            <span className="logo-text">Planet Devs</span>
+            <span className="">
+              <Image src={logoWhite} width={168} height={18} />
+            </span>
           </Navbar.Brand>
 
           {/* Right menu items */}
@@ -79,7 +83,7 @@ const NavbarComponent = () => {
             style={{right: "15px"}}
           >
             <div
-              className="hamburger-menu"
+              className="hamburger-menu d-lg-none"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               onClick={toggleSidebar}
