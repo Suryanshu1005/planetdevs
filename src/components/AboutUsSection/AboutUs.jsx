@@ -28,9 +28,9 @@ const AboutUs = () => {
                 class="ps-lg-3 mt-4 mt-sm-0"
                 style={{fontFamily: "Jost, sans-serif"}}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                We specialize in crafting cutting-edge technology solutions that drive innovation and deliver exceptional value. 
+                Our team is dedicated to understanding your needs, solving complex challenges, 
+                and creating seamless digital experiences. Your success is our mission.
               </p>
               <div class="d-flex justify-content-center mt-5 ms-sm-5 ms-0">
                 <HoverMagneticButton text={"About Us"} />

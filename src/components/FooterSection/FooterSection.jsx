@@ -170,10 +170,10 @@ const FooterSection = () => {
                   </p>
                 </div>
                 <div className="col-lg-6 text-lg-end">
-                  <p>
+                  {/* <p>
                     Develop and design by{" "}
                     <a href="#">Potenza Global Solutions</a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
