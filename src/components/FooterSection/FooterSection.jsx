@@ -56,7 +56,7 @@ const FooterSection = () => {
                       <img className="img-fluid" src={address} alt="" />
                     </i>
                     <span className="info">
-                      <span>17504 Carlton Cuevas Rd </span>Gulfport, MS, 39503
+                      <span>Kalli paschim,  226014</span>lucknow, Uttar Pradesh
                     </span>
                   </li>
                   <li>
@@ -64,7 +64,7 @@ const FooterSection = () => {
                       <img className="img-fluid" src={call} alt="" />
                     </i>
                     <span className="info">
-                      <span>001123456789 </span>Mon-fri 8:30am 6:30pm
+                      <span>+91 7007759706 </span>Mon-fri 10:30am 7:30pm
                     </span>
                   </li>
                   <li>
@@ -72,7 +72,7 @@ const FooterSection = () => {
                       <img className="img-fluid" src={email} alt="" />
                     </i>
                     <span className="info">
-                      <span>Info@example.com </span>24x7 online support
+                      <span>info@planetdevelopers.com </span>24x7 online support
                     </span>
                   </li>
                 </ul>
