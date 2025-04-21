@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
-import aboutus1 from "../../assets/about-01.jpg";
-import aboutus2 from "../../assets/about-03.jpg";
+import aboutus1 from "../../assets/PD-Banner1.jpg";
+import aboutus2 from "../../assets/PD-Banner2.jpg";
 import subtitleIcon from "../../assets/subtitle-icon.png";
 import HoverMagneticButton from "../HoverMagneticButton/HoverMagneticButton";
 const AboutUs = () => {

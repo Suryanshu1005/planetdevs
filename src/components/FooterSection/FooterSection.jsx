@@ -11,7 +11,7 @@ import "./FooterSection.css";
 import address from "../../assets/address-info-contacts.svg";
 import call from "../../assets/address-info-headphone.svg";
 import email from "../../assets/address-info-email.svg";
-import logo from "../../assets/PD-Logo.png";
+import logo from "../../assets/PD-Logo-White.png";
 
 const routes = [
   {
@@ -164,8 +164,7 @@ const FooterSection = () => {
                     <a className="footer-logo" href="index.html">
                       <img
                         // className="img-fluid"
-                        width={175}
-                        height={23}
+                        height={18}
                         src={logo}
                         alt="logo"
                       />

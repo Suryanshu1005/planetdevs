@@ -10,6 +10,7 @@
 
 .marque-item-title {
   font-size: 42px;
+  margin-bottom: 0;
 }
 .marquee-track {
   display: flex;

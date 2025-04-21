@@ -49,7 +49,7 @@ const NavbarComponent = () => {
           {/* Brand logo (no margin) */}
           <Navbar.Brand href="/" className="brand-logo m-0">
             <span className="">
-              <Image src={logoWhite} width={168} height={18} />
+              <Image src={logoWhite} height={30} />
             </span>
           </Navbar.Brand>
 
